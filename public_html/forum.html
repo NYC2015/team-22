@@ -9,16 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Forum</title>
+    <title>KCA Forum</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <link href="css/plugins/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -36,8 +33,7 @@
 
     <div id="wrapper">
 
-       
-       <!-- Navigation -->
+        <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -47,33 +43,32 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">KCA</a>
+                <a class="navbar-brand" href="index.html">KCA: Keep a Child Alive</a>
             </div>
-            <div class="loginInfo">
-                <p>SCREENNAME</p>
-            </div>
+
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Home</a>
+                    </li>
                     <li class="active">
-                        <a href="forum.html"><i class="fa fa-fw fa-newspaper-o"></i> Forum</a>
-                    </li>
-                    <li  >
-                        <a href="clinicInfo.html"><i class="fa fa-fw fa-info"></i> Clinic Info</a>
+                        <a href="forum.html"><i class="fa fa-fw fa-bar-chart-o"></i> Forum</a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-folder-open"></i> HIV rows info</a>
+                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Clinic Info</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-calendar"></i>Calendar</a>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> HIV Rows Info</a>
                     </li>
                     <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i>Contacts</a>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Calendar</a>
                     </li>
                     <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i>Join Us</a>
+                        <a href="FAQ_page.html"><i class="fa fa-fw fa-file"></i> FAQ</a>
+                    </li>
+                    <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> Join Us</a>
                     </li>
                         <li>
                             <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -82,7 +77,7 @@
                             <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            <a href="settings_page.html"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
                         <li>
@@ -98,13 +93,60 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <!------------------>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Forum
+                            <small></small>
+                        </h1>
+                      </div>
+					</div>
+					<div class="form-group input-group">
+                                <input type="text" class="form-control" placeholder="Search the forums.">
+                                <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                            </div>
+					<div class="col-sm-">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">I just found out I'm positive for HIV. WHAT SHOULD I DO?</h3>
+                            </div>
+                            <div class="panel-body">
+                                <strong>10 replies</strong>. Thread reated by <strong>kittykatzrulez</strong> on <strong>10/17/2015</strong>.
+                            </div>
+                        </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Where can I get professional help?</h3>
+                            </div>
+                            <div class="panel-body">
+                                <strong>7 replies</strong>. Thread created by <strong>treesaregreen</strong> on <strong>10/15/2015</strong>.
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-sm">
+                        <div class="panel panel-warning">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">my mom just got diagnosed with HIV how can i help her??</h3>
+                            </div>
+                            <div class="panel-body">
+                                <strong>21 replies</strong>. Thread created by <strong>iluvmymum</strong> on <strong>10/14/2015</strong>.
+                            </div>
+                        </div>
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Teens with HIV, how did you feel when you found out you had HIV?</h3>
+                            </div>
+                            <div class="panel-body">
+                                <strong>101 replies</strong>. Thread created by <strong>PM_ME_YOUR_FEELINGS</strong> on <strong>10/09/2015</strong>.
+                            </div>
+                        </div>
+                    </div>
+					<button type="submit" class="btn btn-primary">Next page</button>
+                    </div>
+                </div>
+                <!-- /.row -->
 
-
-
-
-
-
+            </div>
             <!-- /.container-fluid -->
 
         </div>
@@ -118,19 +160,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
-
-    <!-- Flot Charts JavaScript -->
-    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
-    <script src="js/plugins/flot/jquery.flot.js"></script>
-    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
-    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
-    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
-    <script src="js/plugins/flot/flot-data.js"></script>
 
 </body>
 
