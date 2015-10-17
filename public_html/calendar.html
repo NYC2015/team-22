@@ -9,28 +9,36 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KCA Calendar</title>
+    <title>Calendar</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <link rel="stylesheet" href="css/jquery-ui.css">
+    
+  <script src="js/jquery-1.10.2.js"></script>
+  <script src="js/jquery-ui.js"></script>
 
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });     
+      
+    $(document).ready(function() {
+        $("#myform").submit(function() {
+            document.getElementById("appointments").innerHTML += $("#datepicker").val();
+            document.getElementById("appointments").innerHTML += " "+$("#appointmentId").val();
+            document.getElementById("appointments").innerHTML += "<br>"
+            return false;
+        });
+    });
+    </script>
 </head>
 
 <body>
-
     <div id="wrapper">
 
         <!-- Navigation -->
@@ -43,42 +51,41 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">KCA: Keep a Child Alive</a>
+                <a class="navbar-brand" href="index.html">KCA</a>
             </div>
-
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="loginInfo">
+                <p>SCREENNAME</p>
+            </div>
+            
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="index.html"><i class="fa fa-fw fa-desktop"></i> Home</a>
+                        <a href="clinicInfo.html"><i class="fa fa-fw fa-info"></i> Clinic Info</a>
                     </li>
                     <li>
-                        <a href="forum.html"><i class="fa fa-fw fa-newspaper-o"></i> Forum</a>
-                    </li>
-                    <li>
-                        <a href="clinicinfo.html"><i class="fa fa-fw fa-info"></i> Clinic Info</a>
+                        <a href="charts.html"><i class="fa fa-fw fa-newspaper-o"></i> Forum</a>
                     </li>
                     <li class="active">
-                        <a href="calendar.html"><i class="fa fa-fw fa-calendar"></i> Calendar</a>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-calendar"></i>Calendar</a>
                     </li>
                     <li>
-                        <a href="FAQ_page.html"><i class="fa fa-fw fa-file"></i> FAQ</a>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i>Contacts</a>
                     </li>
                     <li>
-                        <a href="Join.html"><i class="fa fa-fw fa-dashboard"></i> Join Us</a>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i>Join Us</a>
                     </li>
                         <li>
-                            <a href="profile.html"><i class="fa fa-fw fa-user"></i> Profile</a>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
                         </li>
                         <li>
-                            <a href="Chat.html"><i class="fa fa-fw fa-envelope"></i> Live Chat</a>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                         </li>
                         <li>
-                            <a href="settings_page.html"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="logout.html"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                         </li>
                 </ul>
             </div>
